@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+ ) }}
+ 
 SELECT orders.customer_id
 , customers.name
 , customers.email 
